@@ -55,6 +55,20 @@ body {
     color: var(--primary-color);
     text-decoration: none;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.logo a:hover .logo-img {
+    opacity: 0.8;
 }
 
 .logo a:hover {

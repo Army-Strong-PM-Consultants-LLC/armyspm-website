@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ASPM & FLMA Agent Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">ASPM & FLMA</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with questions, feedback, or support requests</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about ASPM or FLMA systems? Need help with implementation? Want to learn more about our services? We'd love to hear from you.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <h3>🏢 Army Strong PM Consultants LLC</h3>
+                            <p><strong>Contact Person:</strong> James Parham</p>
+                            <p><strong>Email:</strong> <a href="mailto:james.parham@armyspm.com">james.parham@armyspm.com</a></p>
+                            <p><strong>Phone:</strong> <a href="tel:915-264-3456">915-264-3456</a></p>
+                            <p><strong>Address:</strong><br>1440 Dominic Anakin Dr<br>El Paso, TX 79928</p>
+                            <p><strong>Website:</strong> <a href="https://www.armyspm.com" target="_blank">www.armyspm.com</a></p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>🏅 Certifications</h3>
+                            <p><strong>Business Certifications:</strong></p>
+                            <ul style="list-style: none; padding-left: 0;">
+                                <li>✓ SBA SDVOSB (Service-Disabled Veteran-Owned Small Business)</li>
+                                <li>✓ VOSB-Texas (Veteran-Owned Small Business)</li>
+                                <li>✓ MBE (Minority Business Enterprise)</li>
+                            </ul>
+                            <p><strong>NAICS Codes:</strong> 541611, 541512, 541513, 541690, 541990</p>
+                            <p><strong>CAGE Code:</strong> 9T7G6</p>
+                            <p><strong>UEI:</strong> TZPFNF9HMFE5</p>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <h3>📚 Resources</h3>
+                            <p>Check our comprehensive documentation:</p>
+                            <a href="documentation.html" class="btn btn-outline">View Documentation</a>
+                            <p style="margin-top: 1rem;">GitHub Repository:</p>
+                            <a href="https://github.com/Taceyes/ASPM-Agent" class="btn btn-outline" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Send a Message</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2>Additional Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>🔧 Troubleshooting</h3>
+                        <p>Having issues? Check our troubleshooting guides:</p>
+                        <ul>
+                            <li><a href="#">STREAMLIT_TROUBLESHOOTING.md</a></li>
+                            <li><a href="#">FIX_PORT_IN_USE.md</a></li>
+                            <li><a href="#">FIX_MODULE_NOT_FOUND.md</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>📖 Quick Start Guides</h3>
+                        <p>Get up and running quickly:</p>
+                        <ul>
+                            <li><a href="#">QUICK_START_SERVER.md</a></li>
+                            <li><a href="#">SERVICENOW_QUICK_START.md</a></li>
+                            <li><a href="#">RAG_QUICK_START.md</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>🚀 Deployment</h3>
+                        <p>Deploy to production:</p>
+                        <ul>
+                            <li><a href="#">STREAMLIT_DEPLOYMENT_GUIDE.md</a></li>
+                            <li><a href="#">RAILWAY_DEPLOYMENT_QUICK_START.md</a></li>
+                            <li><a href="#">DOCKER_DEPLOYMENT.md</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Army Strong PM Consultants</h3>
+                    <p>ASPM & FLMA Agent Systems - Enterprise and Military Strategic Portfolio Management solutions. ASPM for ServiceNow enterprise implementations. FLMA for Army field-level maintenance digital twin.</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">SDVOSB • VOSB • MBE Certified</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/Taceyes/ASPM-Agent" target="_blank">GitHub</a></li>
+                        <li><a href="documentation.html">API Docs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Subscribe</h4>
+                    <p>Get updates on new features and releases</p>
+                    <form class="footer-form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Army Strong PM Consultants LLC. All rights reserved. | <a href="https://www.armyspm.com" target="_blank" style="color: rgba(255, 255, 255, 0.8);">www.armyspm.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - ASPM & FLMA Agent Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">ASPM & FLMA</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="documentation.html" class="active">Documentation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Documentation</h1>
+            <p>Comprehensive guides, API documentation, and resources for ASPM and FLMA</p>
+        </div>
+    </section>
+
+    <!-- FLMA Documentation -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <h2>FLMA Documentation</h2>
+                    <span style="background: #dc2626; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem; font-weight: 600;">In Development</span>
+                </div>
+                <p>FLMA documentation is being developed alongside the system. Documentation will include:</p>
+                <ul class="feature-list">
+                    <li>FLMA architecture and design</li>
+                    <li>ServiceNow workflow configuration for Army maintenance</li>
+                    <li>GCSS-A integration guides</li>
+                    <li>Army maintenance digital twin setup</li>
+                    <li>Field-level maintenance workflow documentation</li>
+                </ul>
+                <div style="margin-top: 2rem; padding: 1.5rem; background: #fef3c7; border-left: 4px solid #f59e0b; border-radius: 4px;">
+                    <p style="margin: 0;"><strong>Coming Soon:</strong> FLMA documentation will be available as the system development progresses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ASPM Quick Start -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="content-wrapper">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <h2>ASPM Quick Start</h2>
+                    <span style="background: #2563eb; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.875rem; font-weight: 600;">Production Ready</span>
+                </div>
+                <div class="doc-section">
+                    <h3>Installation</h3>
+                    <pre><code># Install dependencies
+pip install -r requirements.txt</code></pre>
+                </div>
+
+                <div class="doc-section">
+                    <h3>Start Dashboard</h3>
+                    <p>Run the Streamlit dashboard locally:</p>
+                    <pre><code># Windows
+start_dashboard.bat
+
+# Or directly
+streamlit run aspm_streamlit/app.py</code></pre>
+                    <p>Access at: <code>http://localhost:8501</code></p>
+                </div>
+
+                <div class="doc-section">
+                    <h3>Start API Server</h3>
+                    <p>Run the FastAPI server:</p>
+                    <pre><code># Windows
+start_api_server.bat
+
+# Or directly
+python aspm\server_fastapi.py</code></pre>
+                    <p>Access API docs at: <code>http://localhost:8000/docs</code></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Documentation -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2>ASPM API Endpoints</h2>
+                <div class="api-endpoints">
+                    <div class="api-endpoint">
+                        <h3>PMO Value Ring Assessment</h3>
+                        <p><code>POST /api/pmo/value_ring/assess</code></p>
+                        <p>Assess PMO service catalog and calculate value scores across PMI governance domains.</p>
+                    </div>
+                    <div class="api-endpoint">
+                        <h3>ADKAR Change Readiness</h3>
+                        <p><code>POST /api/ocm/adkar/intake</code></p>
+                        <p>Assess organizational change readiness using ADKAR methodology.</p>
+                    </div>
+                    <div class="api-endpoint">
+                        <h3>SPM Pattern Detection</h3>
+                        <p><code>POST /api/spm/patterns/detect</code></p>
+                        <p>Detect SPM/PPM administration patterns and symptoms.</p>
+                    </div>
+                    <div class="api-endpoint">
+                        <h3>OKR Composition</h3>
+                        <p><code>POST /api/okr/compose</code></p>
+                        <p>Generate OKRs from strategic goals.</p>
+                    </div>
+                    <div class="api-endpoint">
+                        <h3>KPI Composition</h3>
+                        <p><code>POST /api/kpi/compose</code></p>
+                        <p>Generate KPIs and signals for performance measurement.</p>
+                    </div>
+                </div>
+                <p class="text-center">
+                    <a href="http://localhost:8000/docs" class="btn btn-primary" target="_blank">View Interactive API Docs</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Examples -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2>ASPM Usage Examples</h2>
+                <div class="doc-section">
+                    <h3>Basic Agent Usage</h3>
+                    <pre><code>from aspm.agents import SPMEnvAgent
+
+# Initialize an agent
+agent = SPMEnvAgent()
+
+# Use the agent
+result = agent.process_request("Help with SPM environment assessment")</code></pre>
+                </div>
+
+                <div class="doc-section">
+                    <h3>Microsoft Copilot Integration</h3>
+                    <pre><code># Generate Copilot agent configuration
+python scripts/create_copilot_agent_config.py \
+    --api-url https://your-api.com \
+    --output copilot_agent_config.json</code></pre>
+                </div>
+
+                <div class="doc-section">
+                    <h3>Agent Training & Scenario Testing</h3>
+                    <pre><code># Extract scenarios from documents
+python scripts/scenario_test_runner.py --extract-scenarios
+
+# Run all scenarios against agents
+python scripts/scenario_test_runner.py --run-all
+
+# Set up automated monitoring
+python scripts/agent_monitoring_scheduler.py --schedule daily</code></pre>
+                </div>
+
+                <div class="doc-section">
+                    <h3>Using AIE (Agent Improvement Engine)</h3>
+                    <pre><code>from aspm.aie import evaluate_agent_behavior, generate_improvement_plan
+
+# Evaluate an agent run
+evaluation = evaluate_agent_behavior(
+    agent_name="SPMEnvAgent",
+    agent_metadata={"domain": "spm"},
+    transcript="Agent output here..."
+)
+
+# Generate improvement plan
+plan = generate_improvement_plan(evaluation)</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Links -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2>ASPM Documentation Resources</h2>
+                <div class="doc-links-grid">
+                    <div class="doc-link-card">
+                        <h3>📖 Local Dashboard Guide</h3>
+                        <p>Guide for setting up and using the Streamlit dashboard locally.</p>
+                        <a href="#" class="doc-link">README_LOCAL_DASHBOARD.md</a>
+                    </div>
+                    <div class="doc-link-card">
+                        <h3>🚀 API Server Guide</h3>
+                        <p>Setup and usage guide for the FastAPI server.</p>
+                        <a href="#" class="doc-link">START_API_SERVER.md</a>
+                    </div>
+                    <div class="doc-link-card">
+                        <h3>📚 API Documentation</h3>
+                        <p>Complete FastAPI endpoint documentation.</p>
+                        <a href="#" class="doc-link">README_FASTAPI.md</a>
+                    </div>
+                    <div class="doc-link-card">
+                        <h3>🌐 Deployment Guide</h3>
+                        <p>Streamlit deployment guide for production.</p>
+                        <a href="#" class="doc-link">STREAMLIT_DEPLOYMENT_GUIDE.md</a>
+                    </div>
+                    <div class="doc-link-card">
+                        <h3>🤖 Microsoft Copilot Integration</h3>
+                        <p>Guide for integrating ASPM agents with Microsoft 365 Copilot.</p>
+                        <a href="#" class="doc-link">MICROSOFT_COPILOT_INTEGRATION_GUIDE.md</a>
+                    </div>
+                    <div class="doc-link-card">
+                        <h3>🧪 Scenario Testing Guide</h3>
+                        <p>Automated agent training with real-world scenarios.</p>
+                        <a href="#" class="doc-link">SCENARIO_TESTING_GUIDE.md</a>
+                    </div>
+                    <div class="doc-link-card">
+                        <h3>📊 PMO Governance Module</h3>
+                        <p>PMO Value Ring Engine documentation.</p>
+                        <a href="#" class="doc-link">docs/PMO_Governance_Module.md</a>
+                    </div>
+                    <div class="doc-link-card">
+                        <h3>🔄 OCM ADKAR Module</h3>
+                        <p>Prosci ADKAR Intake Engine documentation.</p>
+                        <a href="#" class="doc-link">docs/OCM_ADKAR_Module.md</a>
+                    </div>
+                    <div class="doc-link-card">
+                        <h3>🔍 SPM Pattern Library</h3>
+                        <p>SPM pattern detection and remediation documentation.</p>
+                        <a href="#" class="doc-link">docs/SPM_Pattern_Library.md</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Repository -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2>GitHub Repository</h2>
+                <p>Access the complete source code, issues, and contributions:</p>
+                <div class="text-center">
+                    <a href="https://github.com/Taceyes/ASPM-Agent" class="btn btn-primary" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Army Strong PM Consultants</h3>
+                    <p>ASPM & FLMA Agent Systems - Enterprise and Military Strategic Portfolio Management solutions. ASPM for ServiceNow enterprise implementations. FLMA for Army field-level maintenance digital twin.</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">SDVOSB • VOSB • MBE Certified</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="documentation.html">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/Taceyes/ASPM-Agent" target="_blank">GitHub</a></li>
+                        <li><a href="documentation.html">API Docs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Subscribe</h4>
+                    <p>Get updates on new features and releases</p>
+                    <form class="footer-form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Army Strong PM Consultants LLC. All rights reserved. | <a href="https://www.armyspm.com" target="_blank" style="color: rgba(255, 255, 255, 0.8);">www.armyspm.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
